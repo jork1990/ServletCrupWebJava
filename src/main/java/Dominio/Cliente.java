@@ -40,7 +40,7 @@ public class Cliente {
         this.saldo = saldo;
     }
 
-    public int getIdCliente() {
+     public int getIdCliente() {
         return idCliente;
     }
 
@@ -56,14 +56,13 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
+        public String getApellido() {
         return apellido;
     }
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
     public String getEmail() {
         return email;
     }
