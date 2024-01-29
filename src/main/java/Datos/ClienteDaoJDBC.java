@@ -8,11 +8,6 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- *
- * @author jorge
- */
 public class ClienteDaoJDBC {
     
  private static final String SQL_SELECT= "SELECT id_cliente, nombre,apellido,email,telefono,saldo FROM cliente";

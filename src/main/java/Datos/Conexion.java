@@ -11,10 +11,6 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
-/**
- *
- * @author jorge
- */
 public class Conexion {
     private static final String JDBC_URL="jdbc:mysql://localhost:3306/javaweb?useSSL=false&useTimezone=true&serverTimeZone=UTC&allowPublicKeyRetrieval=true";
     private static final String  JDBC_USER = "root";

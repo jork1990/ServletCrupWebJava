@@ -6,7 +6,6 @@ import Datos.ClienteDaoJDBC;
 import Dominio.Cliente;
 import java.io.IOException;
 import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,7 +21,6 @@ public class ServletControlador extends HttpServlet {
         List<Cliente> clientes = new ClienteDaoJDBC().listar();
         System.out.println("clientes ="+clientes);
         request .setAttribute("clientes", clientes);
-        request.getRequestDispatcher("clientes.jsp").forward(request, response);
-        
+        request.getRequestDispatcher("clientes.jsp").forward(request, response);       
     }
     }
