@@ -33,6 +33,7 @@ public class ClienteDaoJDBC {
              String email=rs.getString("email");
              String telefono=rs.getString("telefono");
              double saldo=rs.getDouble("saldo");
+             
              System.out.println(nombre+" "+apellido+" "+email);
              
            clientes.add(new Cliente(idCliente,nombre,apellido,email,telefono,saldo));
@@ -109,8 +110,12 @@ public class ClienteDaoJDBC {
          Conexion.Close(conn);
                  
      }  
+     
+     
      return rows;
  }
+          /*Actualizar*/
+ 
  public int actualizar(Cliente cliente){
      Connection conn=null;
      PreparedStatement stmt=null;
@@ -136,7 +141,8 @@ public class ClienteDaoJDBC {
                  
      }  
      return rows;
- }
+     
+ }       /*Eliminar*/
  public int eliminar(Cliente cliente){
   Connection conn=null;
      PreparedStatement stmt=null;
@@ -155,7 +161,7 @@ public class ClienteDaoJDBC {
          Conexion.Close(stmt);
          Conexion.Close(conn);
                  
-     }  
+     } 
      return rows;
  }
     public static void main(String[] args) {
