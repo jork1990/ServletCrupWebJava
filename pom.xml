@@ -2,22 +2,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.JorgrCode</groupId>
-    <artifactId>ServletCrupWebJava</artifactId>
+    <artifactId>CrupJavaClientes</artifactId>
     <version>0</version>
     <packaging>war</packaging>
-    <name>ServletCrupWebJava-0</name>
+    <name>CrupJavaClientes-0</name>
     
-    <properties>
+   <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jakartaee>10.0.0</jakartaee>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <jakartaee>8.0</jakartaee>
     </properties>
     
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
-            <version>8.0</version>
-            <type>jar</type>
+            <version>${jakartaee}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>

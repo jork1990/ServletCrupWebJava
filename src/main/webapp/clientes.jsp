@@ -1,8 +1,3 @@
-<%-- 
-    Document   : clientes
-    Created on : 28/01/2024, 6:19:34 p. m.
-    Author     : jorge
---%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -10,16 +5,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Crup Clientes</title>
     </head>
     <body>
         <h1>Listado Clientes</h1>
         <ul>
-            <c:forEach var="clientes" items="$(clientes)" >
+            <c:forEach var="cliente" items="$(clientes)" >
                 
-                <li>$(cliente.idCliente) $(cliente.nombre)  $(cliente.apellido)  $(cliente.saldo) $(</li>
-                
-                 
+                <li>  $(cliente.idCliente) $(cliente.nombre)  $(cliente.apellido)  $(cliente.saldo)  (</li>
+       
             </c:forEach> 
         </ul>
 
